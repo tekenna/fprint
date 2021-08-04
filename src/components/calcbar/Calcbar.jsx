@@ -37,7 +37,7 @@ function Calcbar() {
                                 <li onClick={()=>{
                                     displayForm2()
                                     showSidebar()
-                                    }}><FcDepartment className="icon" /><span> Futo staffs</span></li>
+                                    }}><FcDepartment className="icon" /><span> Futo staff</span></li>
                                 <li onClick={()=>{
                                     displayForm3()
                                     showSidebar()

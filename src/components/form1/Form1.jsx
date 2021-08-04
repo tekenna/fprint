@@ -105,6 +105,7 @@ function Form1() {
                                         onChange={e=>setFormDetails({...formDetails, residence: e.target.value
                                             })} required>
                                             <option ></option>
+                                            <option value="hostel" >Hostel</option>
                                             <option value="eziobodo">Eziobodo</option>
                                             <option value="ihiagwa">Ihiagwa</option>
                                             <option value="umuchima">Umuchima</option>

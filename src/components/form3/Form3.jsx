@@ -152,7 +152,7 @@ function Form3() {
                                         })} required>
                                         <option ></option>
                                         <option value="genrator"
-                                        >genrator</option>
+                                        >generator</option>
                                         <option value="wind energy">wind energy</option>
                                         <option value="solar energy">solar energy</option>
                                     </select>
