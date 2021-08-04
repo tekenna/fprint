@@ -180,4 +180,8 @@
     .field_d>select{
         width: 100%;
     }
+    .form_q{
+        margin: 0.5rem 0;
+        height: 5rem;
+    }
 }
