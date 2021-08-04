@@ -5,13 +5,13 @@ const StateContext = React.createContext();
 function StateProvider(props) {
     const [showForms, setShowForms] = useState({
         form1: {
-            state: false
+            state: true
         },
         form2: {
             state: false
         },
         form3: {
-            state: true
+            state: false
         },
         result: false
     })
