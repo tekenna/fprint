@@ -33,11 +33,11 @@ function Calcbar() {
                                 <li onClick={()=>{
                                     displayForm1()
                                     showSidebar()
-                                    }}><CgCommunity className="icon" /><span >students</span></li>
+                                    }}><CgCommunity className="icon" /><span >futo students</span></li>
                                 <li onClick={()=>{
                                     displayForm2()
                                     showSidebar()
-                                    }}><FcDepartment className="icon" /><span>lectures</span></li>
+                                    }}><FcDepartment className="icon" /><span> Futo staffs</span></li>
                                 <li onClick={()=>{
                                     displayForm3()
                                     showSidebar()
