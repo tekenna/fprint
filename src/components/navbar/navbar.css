@@ -1,0 +1,106 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: rgba(12, 2, 31, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+.navCol1{
+    margin: 1rem 0;
+    color: turquoise;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+.navCol1>span{
+    color: rgb(110, 81, 6);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navCol2{
+    margin: 1rem 0;
+    display: flex;
+    align-items: flex-end;
+}
+.navlink{
+    font-size: 1.5rem;
+}
+.navLink{
+    color: turquoise;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    margin: 0 3rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+    .navCol1{
+        margin: 0.65rem 0;
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0 1rem;
+    }
+    .navCol2{
+        margin: 0.65rem 0;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .navCol1{
+        margin: 0.65rem 0;
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0 1rem;
+    }
+    .navCol2{
+        margin: 0.65rem 0;
+    }
+    .navLink{
+        font-size: 1rem;
+        margin: 0 3rem;
+    }
+    .navlink{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .navLink{
+        font-size: 1rem;
+        margin: 0 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navLink{
+        font-size: 1rem;
+        margin: 0 1.5rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .navCol1{
+        font-size: 0.5rem;
+        font-weight: 500;
+        padding: 0 0.7rem;
+    }
+    .navLink{
+        font-size: 0.8rem;
+        margin: 0 1rem;
+    }
+    .navlink{
+        font-size: 0.8rem;
+        padding-right: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navLink{
+        font-size: 0.8rem;
+        margin: 0 0.7rem;
+    }
+    .navlink{
+        font-size: 0.8rem;
+        margin-right: 1.3rem;
+    }
+}

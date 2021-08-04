@@ -1,0 +1,183 @@
+.form_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    margin-top: 5rem;
+}
+.form_heading>h1{
+    font-size: 3rem;
+    color: rgb(110, 81, 6);
+}
+.note{
+    color: gray;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+.form{
+    max-width: 50%;
+    margin: 2rem auto;
+}
+.form_user{
+    display: flex;
+    flex-direction: column;
+}
+.field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.field>label{
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 15%;
+}
+.field>input{
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background: rgba(206, 195, 176, 0.493);
+    border-radius: 0.5rem;
+    width: 80%;
+}
+.field_d{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.field_d>label{
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 30%;
+}
+.select{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    flex-direction: column;
+}
+.selected{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+.selected>input{
+    margin-right: 1rem;
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.note1{
+    padding: 0.5rem 0;
+}
+.drop>select{
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background: rgba(206, 195, 176, 0.493);
+    border-radius: 0.5rem;
+}
+.ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form_list{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2rem;
+}
+.note_q{
+    padding: 1rem 0;
+}
+.form_q{
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    justify-content: space-between;
+}
+.form_q>select, .form_q>input{
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background: rgba(206, 195, 176, 0.493);
+    border-radius: 0.5rem;
+}
+.form_q>input:focus{
+    outline: 2px solid turquoise;
+}
+.btn{
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: rgba(64, 224, 208, 0.349);
+    color: rgb(110, 81, 6);
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btm_container{
+    max-width: 50%;
+    margin: 2rem auto;
+}
+.btn_r{
+    margin-top: -2rem;
+}
+@media screen and (max-width: 1220px) {
+    .form{
+        max-width: 70%;
+    }
+    .btm_container{
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .form{
+        max-width: 90%;
+    }
+    .btm_container{
+        max-width: 90%;
+    }
+    .form_heading>h1{
+        font-size: 2rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .form_list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .field{
+        flex-direction: column;
+    }
+    .field>label{
+        width: 100%;
+    }
+    .field>input{
+        width: 100%;
+    }
+    .double_field{
+        flex-direction: column;
+    }
+    .field_d{
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .field_d>label{
+        width: 100%;
+    }
+    .field_d>select{
+        width: 100%;
+    }
+}

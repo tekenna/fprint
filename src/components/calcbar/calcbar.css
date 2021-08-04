@@ -1,0 +1,62 @@
+.calbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(12, 2, 31, 0.9);
+}
+.topbar_head{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.topbar>button{
+    width: 5rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.menu{
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+.topbar_head>p{
+    font-size: 1.2rem;
+    color: turquoise;
+    letter-spacing: 0.2rem;
+}
+.bar_list{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 3.8rem);
+    max-width: 350px;
+    background: rgba(12, 2, 31, 0.9);
+    padding: 4rem 0;
+    list-style: none;
+}
+.bar_list>li{
+    font-size: 1rem;
+    color: turquoise;
+    margin: 3rem 1rem;
+    background: rgba(88, 76, 110, 0.3);
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(128, 128, 128, 0.199),-0.5rem -0.5rem 1rem rgba(128, 128, 128, 0.199);
+    text-transform: uppercase
+}
+.icon{
+    margin-right: 1rem;
+}
+@media screen and (max-width: 800px) {
+    .bar_list{
+        padding: 3rem 0;
+        width: 100%;
+        list-style: none;
+    }
+}
