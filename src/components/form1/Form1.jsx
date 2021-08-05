@@ -10,7 +10,7 @@ function Form1() {
         name: "",
         department: "",
         school: "",
-        level: 0,
+        level: "",
         residence: "",
         transportation: "",
         diet: "",
@@ -27,7 +27,7 @@ function Form1() {
     const handleSubmit = async (e)=>{
         e.preventDefault()
         try{
-            const res = await axios.post("/student", {
+            const res = await axios.post("https://cfprint.herokuapp.com/students/", {
                 name: formDetails.name,
                 department: formDetails.department,
                 school: formDetails.school,
@@ -67,12 +67,12 @@ function Form1() {
                                 <div className="field">
                                     <label className="user_label">Name:</label>
                                     <input className="user_input"  type="text" onChange={e=>setFormDetails({...formDetails, name: e.target.value})}
-                                        required  />
+                                         />
                                 </div>
                                 <div className="field">
                                     <label className="user_label">Department:</label>
                                     <input className="user_input" type="text" onChange={e=>setFormDetails({...formDetails, department: e.target.value})}
-                                        required  />
+                                      />
                                 </div>
                                 <div className="field">
                                     <label className="user_label">School:</label>
@@ -85,7 +85,7 @@ function Form1() {
                                         <select className="user_select
                                         " name="level" id="level" 
                                         onChange={e=>setFormDetails({...formDetails, level: e.target.value
-                                            })} required>
+                                            })} >
                                             <option ></option>
                                             <option value="100">100</option>
                                             <option value="200">200</option>
@@ -165,7 +165,7 @@ function Form1() {
                                     <li className="form_q">
                                         <label>How many exercise books do you make use of per semester?</label>
                                         <input type="number" onChange={e=>setFormDetails({...formDetails, books: e.target.value
-                                        })} />
+                                        })} required/>
                                     </li>
                                     <li className="form_q">
                                         <label>How many textbooks  do you use per semester?</label>
@@ -175,7 +175,7 @@ function Form1() {
                                     <li className="form_q">
                                         <label>An average of how many clothes do you buy/sew per semester? </label>
                                         <input type="number"onChange={e=>setFormDetails({...formDetails, clothes: e.target.value
-                                        })} />
+                                        })}  required/>
                                     </li>
                                     
                                     <li className="form_q">

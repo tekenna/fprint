@@ -8,27 +8,25 @@ import Result from "../Results/Result3"
 function Form3() {
     const [formDetails, setFormDetails] = useState({
         name: "",
-        department: "",
-        school: "",
-        level: 0,
         residence: "",
+        businessName: "",
+        businessLocation: "",
         transportation: "",
         diet: "",
-        mealPlan:"",
+        mealPlan: "",
         softDrinks: 0,
         alcohol: 0,
-        books: 0,
-        textBooks: 0,
-        clothes: 0,
+        power: "",
         powerRating: 0,
         liters: 0,
-        genRunTime: 0
+        waste: 0,
+        paper: 0,
     })
     const handleSubmit = async (e)=>{
         e.preventDefault()
         
         try{
-            const res = await axios.post("/fbc", {
+            const res = await axios.post("https://cfprint.herokuapp.com/community/", {
                 name: formDetails.name,
                 residence: formDetails.residence,
                 businessName: formDetails.businessName,

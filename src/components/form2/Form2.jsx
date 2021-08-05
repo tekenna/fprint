@@ -10,19 +10,18 @@ function Form2() {
         name: "",
         department: "",
         school: "",
-        level: 0,
         residence: "",
         transportation: "",
         diet: "",
-        mealPlan:"",
+        mealPlan: "",
         softDrinks: 0,
         alcohol: 0,
-        books: 0,
-        textBooks: 0,
-        clothes: 0,
+        paper: 0,
+        pc: "",
         powerRating: 0,
+        genRunTime: 0,
         liters: 0,
-        genRunTime: 0
+        waste: 0,
     })
     const [drop1, setDrop1] = useState(false)
     const [drop2, setDrop2] = useState(false)
@@ -30,18 +29,20 @@ function Form2() {
     const handleSubmit = async (e)=>{
         e.preventDefault()
         try{
-            const res = await axios.post("/staffs", {
+            const res = await axios.post("https://cfprint.herokuapp.com/staffs/", {
                 name: formDetails.name,
+                department: formDetails.department,
+                school: formDetails.school,
                 residence: formDetails.residence,
-                businessName: formDetails.businessName,
-                businessLocation: formDetails.businessLocation,
                 transportation: formDetails.transportation,
                 diet: formDetails.diet,
                 mealPlan: formDetails.mealPlan,
                 softDrinks: formDetails.softDrinks,
-                alcohol: formDetails.alcohol,
-                power: formDetails.power,
+                alcohol: formDetails.alchohol,
+                paper: formDetails.paper,
+                pc: formDetails.pc,
                 powerRating: formDetails.powerRating,
+                genRunTime: formDetails.genRunTime,
                 liters: formDetails.liters,
                 waste: formDetails.waste,
             })
