@@ -48,4 +48,7 @@
     .acol1{
         width: 100%;
     }
+    .acol1_listItem{
+        font-weight: 300;
+    }
 }

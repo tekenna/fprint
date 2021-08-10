@@ -60,7 +60,7 @@ function Form2() {
                     return(
                         <>
                         <div className="form_heading">
-                            <h1>FUTO STAFFS</h1>
+                            <h1>FUTO STAFF</h1>
                             <small className="note"><i>(NOTE: all the data provided are strictly for research purposes and all of the provided information will remain confidential)</i></small>
                         </div>
                         <form className="form" onSubmit={handleSubmit}>
