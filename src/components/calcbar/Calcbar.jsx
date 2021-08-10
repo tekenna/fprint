@@ -41,7 +41,7 @@ function Calcbar() {
                                 <li onClick={()=>{
                                     displayForm3()
                                     showSidebar()
-                                    }}><GrUserWorker color="green" className="icon" /><span>FUTO businnes community</span></li>
+                                    }}><GrUserWorker color="green" className="icon" /><span>FUTO business community</span></li>
                             </>
                         )
                     }}

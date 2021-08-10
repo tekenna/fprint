@@ -88,7 +88,7 @@ function Form2() {
                                                     setDrop1(true)
                                                     setDrop2(false)
                                                 }} />
-                                                <label htmlFor="otown2">Owerri North</label>
+                                                <label htmlFor="otown2">Owerri West</label>
                                             </div>
                                             {
                                             drop1?
