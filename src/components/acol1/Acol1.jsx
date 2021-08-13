@@ -10,7 +10,7 @@ function Cart() {
                     <h3>ABOUT THE CALCULATOR</h3>
                 </span>
                 <img src="https://media.istockphoto.com/photos/hell-stay-until-he-has-it-all-figured-out-picture-id1186079153?k=6&m=1186079153&s=612x612&w=0&h=a6aOROqhwWEhc1T0Cerlk7peiJapfu0ab9dZLSM27pY=" alt="..." />
-                <p className="sect_p">To calculate carbon footprint, a lot of factors are to be taken into consideration. These factors ranges between the existing realtionships between the observable quantity and it's environment.This calculator is designed to  calculate carbon footprint of several quantities with the Federal University of Technology Owerri as case study.</p>
+                <p className="sect_p">To calculate carbon footprint, a lot of factors are to be taken into consideration. These factors ranges between the existing relationships between the observable quantity and it's environment.This calculator is designed to  calculate carbon footprint of several quantities with the Federal University of Technology Owerri as case study.</p>
             </div>
             <div className="acol1_sect">
                 <span className="acol1_title">
@@ -18,7 +18,7 @@ function Cart() {
                 </span>
                 <span className="acol1_title"></span>
                 <ul className="acol1_list">
-                    <li className="acol1_listItem">Futo Staffs</li>
+                    <li className="acol1_listItem">Futo Staff</li>
                     <li className="acol1_listItem">Futo Students</li>
                     <li className="acol1_listItem">Futo business community</li>
                 </ul>

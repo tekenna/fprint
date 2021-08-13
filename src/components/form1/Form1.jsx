@@ -118,7 +118,7 @@ function Form1() {
                                 <small className="note note_q "><i>(please, kindly answer the following questions)</i></small>
                                 <div className="form_list">     
                                     <li className="form_q">
-                                        <label>What is your daily  means of transportation to your work place?</label>
+                                        <label>What is your daily  means of transportation to school?</label>
                                         <select name="transportation" id="transportation" onChange={e=>setFormDetails({...formDetails, transportation: e.target.value
                                             })} required>
                                             <option ></option>
